@@ -2,7 +2,10 @@ package UdemyJavaCourse.Section6.InheritanceChallengePart1;
 
 public class Ferrari extends Car {
 
-    public Ferrari(String name, String size, int numberOfGears) {
-        super(name, size, numberOfGears);
+    private int roadServiceMonths;
+
+    public Ferrari(int roadServiceMonths) {
+        super("Outlander", "FrontWD", 4, 2, 6, false);
+        this.roadServiceMonths = roadServiceMonths;
     }
 }

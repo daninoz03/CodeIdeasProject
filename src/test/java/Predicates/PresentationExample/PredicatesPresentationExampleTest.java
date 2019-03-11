@@ -1,6 +1,5 @@
-import Predicates.PresentationExample.Employee;
-import Predicates.PresentationExample.EmployeePredicateExample;
-import Predicates.PresentationExample.Main;
+package Predicates.PresentationExample;
+
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -11,15 +10,16 @@ import java.util.List;
 
 import static org.hamcrest.core.Is.is;
 
+
 @RunWith(MockitoJUnitRunner.class)
-public class Testing {
+public class PredicatesPresentationExampleTest {
 
 
     @Test
-    public void firstTest(){
+    public void shouldFilterByAgeAndReturnOneResult() {
         // given
         Main main = new Main();
-        Employee employee1 = new Employee("Test",23,"Anything","The Moon");
+        Employee employee1 = new Employee("Test", 23, "Anything", "The Moon");
         Employee employee2 = new Employee("Another Test", 106, "Lunatic", "Under The Sea");
         List<Employee> employees = new ArrayList<>();
         employees.add(employee1);
@@ -29,7 +29,8 @@ public class Testing {
         List<Employee> returnedEmployees = main.filterByAgeList(employees, EmployeePredicateExample.getNonRetiredEmployees);
 
         // then
-        Assert.assertThat(returnedEmployees.size(),is(1));
+        Assert.assertThat(returnedEmployees.size(), is(1));
     }
+
 
 }

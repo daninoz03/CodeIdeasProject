@@ -2,15 +2,30 @@ package UdemyJavaCourse.Section6.InheritanceChallengePart1;
 
 public class Car extends Vehicle {
 
-    private int numberOfGears;
+    private int wheels;
+    private int doors;
+    private int gears;
+    private boolean isManual;
 
-    public Car(String name, String size, int numberOfGears) {
+    private int currentGear;
+
+    public Car(String name, String size, int wheels, int doors, int gears, boolean isManual) {
         super(name, size);
-        this.numberOfGears = numberOfGears;
+        this.wheels = wheels;
+        this.doors = doors;
+        this.gears = gears;
+        this.isManual = isManual;
+        this.currentGear = 1;
     }
 
-    public void changeGears(){
-        System.out.println("In vehicle class and now changing gears");
-        System.out.println("In vehicle class vehicle has "+numberOfGears+ " gears");
+    public void changeGear(int currentGear) {
+        this.currentGear = currentGear;
+        System.out.println("Car.setCurrentGear(): Change to " + this.currentGear + " gear.");
     }
+
+    public void changeVelocity(int speed, int direction) {
+        move(speed,direction);
+        System.out.println("Car.changeVelocity() : Velocity " + speed + " direction " + direction);
+    }
+
 }
