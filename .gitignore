@@ -1,0 +1,9 @@
+#ignore IDEA files
+.idea/
+.DS_Store
+*.iml
+
+*.class
+
+#kotlin
+*kotlin_module
