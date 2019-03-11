@@ -3,10 +3,11 @@
 .DS_Store
 *.iml
 
+# ignore class files
 *.class
 
-#kotlin
+# ignore kotlin
 *kotlin_module
 
-#debug log
+#ignore debug log
 npm-debug.log
