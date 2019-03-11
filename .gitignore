@@ -7,3 +7,6 @@
 
 #kotlin
 *kotlin_module
+
+#debug log
+npm-debug.log
