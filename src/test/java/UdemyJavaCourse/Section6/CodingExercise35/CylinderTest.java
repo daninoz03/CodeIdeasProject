@@ -11,6 +11,9 @@ import static org.hamcrest.core.Is.is;
 public class CylinderTest {
 
 
+    /**
+     * Test comment
+     */
     @Test
     public void shouldReturnCorrectVolume() {
         // given
