@@ -10,11 +10,6 @@ import static org.hamcrest.core.Is.is;
 @RunWith(MockitoJUnitRunner.class)
 public class CylinderTest {
 
-
-    /**
-     * Test comment 2 asfadfad
-     * adfddagg
-     */
     @Test
     public void shouldReturnCorrectVolume() {
         // given
