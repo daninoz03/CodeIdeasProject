@@ -100,8 +100,6 @@ public class Main {
             }
         }
         scanner.close();
-
-        System.out.println("Test comment");
     }
 
 }
