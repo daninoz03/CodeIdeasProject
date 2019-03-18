@@ -22,7 +22,7 @@ public class Main {
 
     }
 
-    private static int[] sortIntegers(int[] intArray) {
+    public static int[] sortIntegers(int[] intArray) {
 
         //Copy array simple method
         /*int[] sortedArray = new int[intArray.length];
