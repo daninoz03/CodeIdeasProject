@@ -1,4 +1,4 @@
-package UdemyJavaCourse.Section8.ArrayListChallengePart1;
+package UdemyJavaCourse.Section8.ArrayListChallenge;
 
 public class Contact {
 
