@@ -11,3 +11,6 @@
 
 #ignore debug log
 npm-debug.log
+
+# target folder
+target/
