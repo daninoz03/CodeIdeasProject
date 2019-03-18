@@ -12,7 +12,7 @@ public class Main {
         healthyBurger.setCheese(true);
         System.out.println("The total cost of the healthy burger is "+healthyBurger.getTotalCost());
 
-        DeluxBurger deluxBurger = new DeluxBurger("Italian","deer");
-        System.out.println("The total cost of the deluxe burger is "+deluxBurger.getTotalCost());
+        DeluxeBurger deluxeBurger = new DeluxeBurger("Italian","deer");
+        System.out.println("The total cost of the deluxe burger is "+ deluxeBurger.getTotalCost());
     }
 }

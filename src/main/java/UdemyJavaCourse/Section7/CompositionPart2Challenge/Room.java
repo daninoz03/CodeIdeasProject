@@ -23,10 +23,6 @@ public class Room {
         return roomType;
     }
 
-    /*public int getNumberOfDoors() {
-        return numberOfDoors;
-    }*/
-
     public boolean isEnSuite() {
         return isEnSuite;
     }

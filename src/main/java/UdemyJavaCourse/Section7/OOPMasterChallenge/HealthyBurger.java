@@ -9,7 +9,9 @@ public class HealthyBurger extends Hamburger {
     public HealthyBurger(String meat, boolean lowFatMayo, boolean egg) {
         super("Rye", meat);
         this.lowFatMayo = lowFatMayo;
+        setLowFatMayo(lowFatMayo);
         this.egg = egg;
+        setEgg(egg);
     }
 
     public void setLowFatMayo(boolean lowFatMayo) {
