@@ -18,7 +18,7 @@ public class MobilePhone {
         }
     }
 
-    private int findContact(String name) {
+    public int findContact(String name) {
         for (int i = 0; i<myContacts.size(); i++) {
             if (myContacts.get(i).getName().equals(name)){
                 return i;
@@ -66,5 +66,9 @@ public class MobilePhone {
             System.out.println(contact.getName()+" -> "+contact.getNumber());
         }
         System.out.println("-----------------------");
+    }
+
+    public void setMyContacts(ArrayList<Contact> myContacts) {
+        this.myContacts = myContacts;
     }
 }
