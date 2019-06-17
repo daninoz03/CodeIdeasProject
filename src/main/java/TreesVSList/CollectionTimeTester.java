@@ -12,7 +12,8 @@ public class CollectionTimeTester<T extends Collection<Integer>> {
 
         for (int i = 0; i <= 100000; i++) {
             Random random = new Random();
-            int randomInt = random.nextInt(10000);
+            //Setting the bound to more than the count as treesets don't allow duplicates
+            int randomInt = random.nextInt(10000000);
 
 
             collection.add(randomInt);
@@ -26,8 +27,8 @@ public class CollectionTimeTester<T extends Collection<Integer>> {
         addElementsToCollection(collection);
         executeAdditionalLogic(collection);
         timer.stop();
-        System.out.println("Time taken for " + collection.getClass() + " is " + timer.getTime());
-
+        System.out.println("Time taken for " + collection.getClass().getSimpleName() + " is " + timer.getTime());
+        System.out.println(""+collection.getClass().getSimpleName()+" has "+collection.size()+" elements");
     }
 
     protected void executeAdditionalLogic(T list) {

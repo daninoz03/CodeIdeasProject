@@ -15,13 +15,13 @@ public class MyLinkedList implements NodeList {
 
     @Override
     public boolean addItem(ListItem newItem) {
-        if (this.root == null){
+        if (this.root == null) {
             System.out.println("List was empty");
             this.root = newItem;
             return true;
         }
         ListItem currentItem = this.root;
-        while(currentItem != null) {
+        while (currentItem != null) {
             int comparison = currentItem.compareTo(newItem);
             if (comparison < 0) {
                 //newItem is greater, move right if possible
@@ -33,14 +33,14 @@ public class MyLinkedList implements NodeList {
                     return true;
 
                 }
-            } else if(comparison > 0) {
+            } else if (comparison > 0) {
                 // newItem is less, insert before
-                if (currentItem.previous() != null){
+                if (currentItem.previous() != null) {
                     currentItem.previous().setToNext(newItem);
                     newItem.setToPrevious(currentItem.previous());
                     newItem.setToNext(currentItem).setToPrevious(newItem);
 
-                }else {
+                } else {
                     // the node with a previous is the root
                     newItem.setToNext(this.root);
                     this.root.setToPrevious(newItem);
@@ -48,7 +48,7 @@ public class MyLinkedList implements NodeList {
 
                 }
                 return true;
-            } else{
+            } else {
                 //equal
                 System.out.println(newItem.getValue() + "already exists in the list");
                 return false;
@@ -60,33 +60,33 @@ public class MyLinkedList implements NodeList {
     @Override
     public boolean removeItem(ListItem item) {
 
-        if(item != null){
-            System.out.println("Deleting item: "+item.getValue());
+        if (item != null) {
+            System.out.println("Deleting item: " + item.getValue());
 
-        }else{
+        } else {
             return false;
         }
 
         ListItem currentItem = this.root;
         while (currentItem != null) {
             int comparison = currentItem.compareTo(item);
-            if (comparison == 0){
+            if (comparison == 0) {
                 //found item to delete
-                if (currentItem==this.root){
+                if (currentItem == this.root) {
                     this.root = currentItem.next();
                 } else {
                     currentItem.previous().setToNext(currentItem.next());
-                    if (currentItem.next() != null){
+                    if (currentItem.next() != null) {
                         currentItem.next().setToPrevious(currentItem.previous());
                     }
                 }
                 return true;
-            }else if (comparison < 0){
+            } else if (comparison < 0) {
                 currentItem = currentItem.next();
-            }else {//comparison > 0
+            } else {//comparison > 0
                 //We are at an item greater than the one to be deleted
                 //so the item is not in the list
-                System.out.println("Item "+item.getValue()+" is not in the list");
+                System.out.println("Item " + item.getValue() + " is not in the list");
                 return false;
 
             }

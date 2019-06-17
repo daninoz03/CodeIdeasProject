@@ -12,9 +12,11 @@ public abstract class ListItem {
     }
 
     public abstract ListItem next();
+
     public abstract ListItem setToNext(ListItem item);
 
     public abstract ListItem previous();
+
     public abstract ListItem setToPrevious(ListItem item);
 
 
