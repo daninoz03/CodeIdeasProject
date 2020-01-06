@@ -7,6 +7,7 @@ import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
 
 import static org.hamcrest.Matchers.is;
+import static org.junit.Assert.assertEquals;
 
 @RunWith(MockitoJUnitRunner.class)
 public class RainfallChallengeTest {
@@ -21,7 +22,7 @@ public class RainfallChallengeTest {
         int result = rainfallChallenge.entryMethodUsedForTesting();
 
         // then
-        Assert.assertEquals(result, 0);
+        assertEquals(result, 0);
         Assert.assertThat(result, is(0));
     }
 
@@ -35,7 +36,7 @@ public class RainfallChallengeTest {
         int result = rainfallChallenge.entryMethodUsedForTesting();
 
         // then
-        Assert.assertEquals(result, 0);
+        assertEquals(result, 0);
         Assert.assertThat(result, is(0));
     }
 
@@ -49,7 +50,7 @@ public class RainfallChallengeTest {
         int result = rainfallChallenge.entryMethodUsedForTesting();
 
         // then
-        Assert.assertEquals(result, 0);
+        assertEquals(result, 0);
         Assert.assertThat(result, is(0));
     }
 
@@ -63,7 +64,7 @@ public class RainfallChallengeTest {
         int result = rainfallChallenge.entryMethodUsedForTesting();
 
         // then
-        Assert.assertEquals(result, 5);
+        assertEquals(result, 5);
     }
 
 
@@ -78,7 +79,7 @@ public class RainfallChallengeTest {
         int result = rainfallChallenge.entryMethodUsedForTesting();
 
         // then
-        Assert.assertEquals(result, 7);
+        assertEquals(result, 7);
     }
 
     @Test

@@ -8,7 +8,7 @@ import java.util.function.BiFunction;
 import java.util.function.Function;
 import java.util.function.IntUnaryOperator;
 
-public class ChainedFucntions {
+public class ChainedFunctions {
 
     public static void main(String[] args) {
 

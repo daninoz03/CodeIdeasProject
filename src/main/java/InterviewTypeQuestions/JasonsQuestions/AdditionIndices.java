@@ -1,4 +1,4 @@
-package InterviewTypeQuestions.JasonsQuestion;
+package InterviewTypeQuestions.JasonsQuestions;
 
 import org.apache.commons.lang3.time.StopWatch;
 
@@ -18,7 +18,7 @@ import java.util.concurrent.TimeUnit;
  * return [0, 1].
  */
 
-public class Main {
+public class AdditionIndices {
 
 
     public static int[] bruteForceMethod(int[] intArray, int target){

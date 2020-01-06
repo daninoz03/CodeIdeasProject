@@ -1,4 +1,4 @@
-package LeetCode.Challenges;
+package InterviewTypeQuestions.VerizonInterviewQuestions.InternAndGraduateExam1;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -9,7 +9,6 @@ import java.util.List;
 public class WorkJavaInterviewProblem {
 
     public List<String> processURLs(List<String> urls) {
-
         String parsedURL = "";
         List<String> domainNameWithCountList = new ArrayList<>();
 
@@ -37,16 +36,11 @@ public class WorkJavaInterviewProblem {
     }
 
     private String parseHostFromUrl(String url) throws MalformedURLException {
-
         URL actualUrl = new URL(url);
-
         return actualUrl.getHost();
-
     }
 
-
     public static void main(String[] args) {
-
         WorkJavaInterviewProblem workJavaInterviewProblem = new WorkJavaInterviewProblem();
 
         List<String> listToSend = new ArrayList<>();
@@ -67,8 +61,5 @@ public class WorkJavaInterviewProblem {
         for (String item : returnedList) {
             System.out.println(item);
         }
-
     }
-
-
 }
