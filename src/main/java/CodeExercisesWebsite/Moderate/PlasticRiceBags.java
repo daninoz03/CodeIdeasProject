@@ -14,6 +14,9 @@ public class PlasticRiceBags {
 
         if (goal >= BIG_BAG_KILO_AMOUNT) {
             bigBagsUsed = goal / BIG_BAG_KILO_AMOUNT;
+            if (bigBagsUsed > big) {
+                bigBagsUsed = big;
+            }
 
             int smallBagsNeeded = goal - (bigBagsUsed * 5);
             if (smallBagsNeeded <= small) {
@@ -32,11 +35,13 @@ public class PlasticRiceBags {
 
 
     public static void main(String[] args) {
+        System.out.println("Soetinh something something "+SMALL_BAG_KILO_AMOUNT+" something seld");
         PlasticRiceBags plasticRiceBags = new PlasticRiceBags();
 
         System.out.println(plasticRiceBags.packageRice(2, 2, 12));
         System.out.println(plasticRiceBags.packageRice(2, 1, 13));
         System.out.println(plasticRiceBags.packageRice(2, 1, 5));
+        System.out.println(plasticRiceBags.packageRice(2, 1, 7));
         System.out.println(plasticRiceBags.packageRice(5, 3, 24));
         System.out.println(plasticRiceBags.packageRice(2, 7, 18));
     }
