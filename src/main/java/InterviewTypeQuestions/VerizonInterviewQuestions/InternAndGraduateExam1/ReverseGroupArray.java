@@ -51,7 +51,6 @@ public class ReverseGroupArray {
                 if (array.length - j < numElements) {
                     // dont' reverse and add to final array
                     finalArrayList.add(array[j]);
-
                     // if you're at the end of the array then break
                     if (j == array.length - 1) {
                         break;
