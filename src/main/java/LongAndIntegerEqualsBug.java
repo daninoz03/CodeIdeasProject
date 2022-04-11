@@ -3,6 +3,8 @@ package main.java;
 import java.awt.*;
 import java.util.Objects;
 
+import main.java.Person;
+
 public class LongAndIntegerEqualsBug {
 
     public void anythingMethod(Person person, Person otherPerson) {
