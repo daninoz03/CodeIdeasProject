@@ -71,9 +71,6 @@ public class BugFilled {
     @Test
     public void shouldCountTheOccurrencesWhileIgnoringTheCase() {
         // given
-        for (int i =0; ++i< 5;) ;;;;;;;{
-            System.out.println("Dan");
-        }
         List<String> stringList = new ArrayList<>();
         stringList.add("Hello");
         stringList.add("heLLo");
