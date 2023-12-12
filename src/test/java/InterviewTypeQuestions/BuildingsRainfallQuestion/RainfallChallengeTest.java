@@ -6,6 +6,14 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.Period;
+import java.time.format.DateTimeFormatter;
+import java.time.format.FormatStyle;
+import java.util.ArrayList;
+import java.util.List;
+
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertEquals;
 
@@ -85,6 +93,15 @@ public class RainfallChallengeTest {
     @Test
     public void shouldReturnCorrectSolutionsWhenReadingFromAFileOfArrays() {
         // given
+        String a = "";
+        a += 2;
+        a += 'c';
+        a += false;
+        if ( a == "2cfalse") System.out.println("==");
+        if ( a.equals("2cfalse")) System.out.println("equals");
+        System.out.println("");
+
+        int[] java = new int[5];
 
 
         // when
