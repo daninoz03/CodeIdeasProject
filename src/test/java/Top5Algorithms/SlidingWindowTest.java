@@ -59,9 +59,6 @@ public class SlidingWindowTest {
         // given
         String testString = "abcabba";
 
-
-        String blah = " This is a test";
-
         int returnedNumber;
         int expectedNumber = 3;
         // when
