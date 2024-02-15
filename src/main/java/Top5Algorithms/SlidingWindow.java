@@ -6,8 +6,6 @@ import java.util.List;
 import java.util.Set;
 
 public class SlidingWindow {
-    //List<String> stringList = new ArrayList<>();
-
     /**
      * Sliding window algorithm: Return the longest substring without repeating characters
      */
@@ -24,7 +22,6 @@ public class SlidingWindow {
                 if (!longestList.contains(arrayOfChars[j])) {
                     longestList.add(arrayOfChars[j]);
                 } else {
-                    count = longestList.size();
                     stringToAddToList = addToStringList(arrayOfChars, i, j);
                     stringList.add(stringToAddToList);
                     break;
@@ -49,7 +46,6 @@ public class SlidingWindow {
         String concatonatedString = "";
         for (int h = i; h < j; h++) {
             concatonatedString = concatonatedString.concat(String.valueOf(arrayOfChar[h]));
-            //stringList.add(arrayOfChar[h]);
         }
         return concatonatedString;
     }

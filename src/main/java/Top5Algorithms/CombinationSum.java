@@ -6,23 +6,6 @@ import java.util.*;
 
 public class CombinationSum {
 
-    /*public List<List<Integer>> combinationSum(int[] candidates, int target) {
-        int sum = 0;
-        List<Integer> integerList = new ArrayList<>();
-
-        List<List<Integer>> listOfList = new ArrayList<>();
-
-        if (sum == target){
-            break ;
-        }
-        // if the sum is greater than
-        if (sum == target){
-            break ;
-        }
-
-        //if the list
-     }*/
-
     static ArrayList<ArrayList<Integer>> getCombinationSum(ArrayList<Integer> arr, int sum) {
         ArrayList<ArrayList<Integer>> ans = new ArrayList<>();
         ArrayList<Integer> temp = new ArrayList<>();

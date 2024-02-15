@@ -26,22 +26,6 @@ public class SlidingWindowTest {
         Assert.assertEquals(returnedNumber,expectedNumber);
     }
 
-    /*@Test
-    public void shouldReturnCorrectLongestSubstringSizeWithLongWordWhenArraysOfCharsIsSent(){
-        // given
-        String testString = "javaconceptoftheday";
-        char[] charArray = testString.toCharArray();
-
-        int returnedNumber;
-        int expectedNumber = 8;
-
-        // when
-        returnedNumber = slidingWindow.getLongestSubstring(charArray);
-
-        // then
-        Assert.assertEquals(returnedNumber,expectedNumber);
-    }*/
-
     @Test
     public void shouldReturnCorrectLongestSubstringSizeWithLongWordWhenOptomisedAlgorithmIsCalled(){
         // given
