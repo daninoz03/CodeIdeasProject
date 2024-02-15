@@ -3,8 +3,11 @@ jobs:
   build:
     working_directory: ~/project
     docker:
-      - image: circleci/openjdk:11-jdk-buster
+      - image: cimg/openjdk:21.0.0
     steps:
+      - add_ssh_keys:
+          fingerprints:
+            - "SO:ME:FIN:G:ER:PR:IN:T"
       - checkout
       - run: mvn clean install
       - run: mvn test
