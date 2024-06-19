@@ -259,8 +259,8 @@ public class DirectoryCreator {
         DirectoryCreator directoryCreator = new DirectoryCreator();
         directoryCreator.createDirectories();
         long endTime = System.currentTimeMillis();
-        long timeTaken = startTime-endTime;
-        System.out.println("Time taken was "+timeTaken);
+        long timeTaken = startTime - endTime;
+        System.out.println("Time taken was " + timeTaken);
     }
 
     private void buildPathForDirectoryAndCreate(String rootElement, String level2Element, String level3Element, String department, String entityCode, List<String> level4List) {
@@ -776,12 +776,12 @@ public class DirectoryCreator {
     }
 
     private void createSortDirectories(String department, List<String> sortBuildingAMHSDepartmentEntityCodeList, String rootElement, String level2Element, String level3Element, List<String> level4List,
-                                      List<String> sortBuildingDireDepartmentEntityCodeList, List<String> sortBuildingDryEtchDepartmentEntityCodeList,
-                                      List<String> sortBuildingGlobalsDepartmentEntityCodeList, List<String> sortBuildingLithoDepartmentEntityCodeList,
-                                      List<String> sortBuildingPlanarDepartmentEntityCodeList, List<String> sortBuildingThinFilmsDepartmentEntityCodeList,
-                                      List<String> sortBuildingWetEtchDepartmentEntityCodeList, List<String> sortBuildingSortDepartmentEntityCodeList,
-                                      List<String> sortBuildingC4DepartmentEntityCodeList, List<String> sortBuildingDefectMetroDepartmentEntityCodeList,
-                                      List<String> sortBuildingPCDDepartmentEntityCodeList) {
+                                       List<String> sortBuildingDireDepartmentEntityCodeList, List<String> sortBuildingDryEtchDepartmentEntityCodeList,
+                                       List<String> sortBuildingGlobalsDepartmentEntityCodeList, List<String> sortBuildingLithoDepartmentEntityCodeList,
+                                       List<String> sortBuildingPlanarDepartmentEntityCodeList, List<String> sortBuildingThinFilmsDepartmentEntityCodeList,
+                                       List<String> sortBuildingWetEtchDepartmentEntityCodeList, List<String> sortBuildingSortDepartmentEntityCodeList,
+                                       List<String> sortBuildingC4DepartmentEntityCodeList, List<String> sortBuildingDefectMetroDepartmentEntityCodeList,
+                                       List<String> sortBuildingPCDDepartmentEntityCodeList) {
 
         if (department.equals("AMHS")) {
             for (String sort_AMHSElement : sortBuildingAMHSDepartmentEntityCodeList) {

@@ -18,8 +18,6 @@ public class EntityCodeDirectoryPaths {
     static final String PATH_TO_F34BUILDING_DEFECTMETRO_DEPARTMENT_ENTITYCODE = "./entityCodes/f34/f34Building_DefectMetro.csv";
     static final String PATH_TO_F34BUILDING_PCD_DEPARTMENT_ENTITYCODE = "./entityCodes/f34/f34Building_PCD.csv";
 
-
-
     /**
      * All entity codes possible for F10
      */
@@ -35,7 +33,6 @@ public class EntityCodeDirectoryPaths {
     static final String PATH_TO_F10BUILDING_C4_DEPARTMENT_ENTITYCODE = "./entityCodes/f10/f10Building_C4.csv";
     static final String PATH_TO_F10BUILDING_DEFECTMETRO_DEPARTMENT_ENTITYCODE = "./entityCodes/f10/f10Building_DefectMetro.csv";
     static final String PATH_TO_F10BUILDING_PCD_DEPARTMENT_ENTITYCODE = "./entityCodes/f10/f10Building_PCD.csv";
-
 
     /**
      * All entity code possible matches for F14
@@ -53,7 +50,6 @@ public class EntityCodeDirectoryPaths {
     static final String PATH_TO_F14BUILDING_DEFECTMETRO_DEPARTMENT_ENTITYCODE = "./entityCodes/f14/f14Building_DefectMetro.csv";
     static final String PATH_TO_F14BUILDING_PCD_DEPARTMENT_ENTITYCODE = "./entityCodes/f14/f14Building_PCD.csv";
 
-
     /**
      * All entity code possible matches for F24
      */
@@ -69,7 +65,6 @@ public class EntityCodeDirectoryPaths {
     static final String PATH_TO_F24BUILDING_C4_DEPARTMENT_ENTITYCODE = "./entityCodes/f24/f24Building_C4.csv";
     static final String PATH_TO_F24BUILDING_DEFECTMETRO_DEPARTMENT_ENTITYCODE = "./entityCodes/f24/f24Building_DefectMetro.csv";
     static final String PATH_TO_F24BUILDING_PCD_DEPARTMENT_ENTITYCODE = "./entityCodes/f24/f24Building_PCD.csv";
-
 
     /**
      * All entity code possible matches for IR1
@@ -134,8 +129,4 @@ public class EntityCodeDirectoryPaths {
     static final String PATH_TO_SORTBUILDING_C4_DEPARTMENT_ENTITYCODE = "./entityCodes/sort/sortBuilding_C4.csv";
     static final String PATH_TO_SORTBUILDING_DEFECTMETRO_DEPARTMENT_ENTITYCODE = "./entityCodes/sort/sortBuilding_DefectMetro.csv";
     static final String PATH_TO_SORTBUILDING_PCD_DEPARTMENT_ENTITYCODE = "./entityCodes/sort/sortBuilding_PCD.csv";
-
-
-
-
 }
