@@ -84,7 +84,7 @@ public class DirectoryCreatorTest {
     @Test
     public void shouldCreateEntityCodeDirectoriesOfF14BuildingWithWetEtchDepartment_WhenCreateDirectoriesIsCalled() {
         // given
-        String pathToEntityCodes = "/Users/danielobrien/Desktop/BowsyTest/F14-Tool Acceptance Sign Off/Fab/Demo - move Out/Wet Etch/f14WetEtchEntityCode1";
+        String pathToEntityCodes = "/Users/danielobrien/Desktop/BowsyTest/F14-Tool Acceptance Sign Off/Fab/Demo - move Out/Wet Etch/WRO101-1";
         File file = new File(pathToEntityCodes);
 
         // when
@@ -111,7 +111,7 @@ public class DirectoryCreatorTest {
     @Test
     public void shouldCreateEntityCodeDirectoriesOfF24BuildingWithWetEtchDepartment_WhenCreateDirectoriesIsCalled() {
         // given
-        String pathToEntityCodes = "/Users/danielobrien/Desktop/BowsyTest/F24-Tool Acceptance Sign Off/Fab/Demo - move Out/Wet Etch/f24WetEtchEntityCode1";
+        String pathToEntityCodes = "/Users/danielobrien/Desktop/BowsyTest/F24-Tool Acceptance Sign Off/Fab/Demo - move Out/Wet Etch/GST108-1";
         File file = new File(pathToEntityCodes);
 
         // when
@@ -138,7 +138,7 @@ public class DirectoryCreatorTest {
     @Test
     public void shouldCreateEntityCodeDirectoriesOfF34BuildingWithWetEtchDepartment_WhenCreateDirectoriesIsCalled() {
         // given
-        String pathToEntityCodes = "/Users/danielobrien/Desktop/BowsyTest/F34-Tool Acceptance Sign Off/Fab/Demo - move Out/Wet Etch/f34WetEtchEntityCode1";
+        String pathToEntityCodes = "/Users/danielobrien/Desktop/BowsyTest/F34-Tool Acceptance Sign Off/Fab/Demo - move Out/Wet Etch/KST701-1";
         File file = new File(pathToEntityCodes);
 
         // when
