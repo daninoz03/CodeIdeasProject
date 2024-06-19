@@ -22,7 +22,6 @@ public class DirectoryCreatorTest {
     static File file2 = new File(PATH_TO_BUILDING2_DIRECTORY);
     static File file3 = new File(PATH_TO_BUILDING3_DIRECTORY);
     static File file4 = new File(PATH_TO_BUILDING4_DIRECTORY);
-    ;
 
     @BeforeClass
     public static void removeAnyDirectoriesCurrentlyPresent() {

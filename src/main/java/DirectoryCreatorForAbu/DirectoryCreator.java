@@ -5,7 +5,6 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-import java.util.Timer;
 
 public class DirectoryCreator {
 
@@ -31,8 +30,6 @@ public class DirectoryCreator {
         List<String> f34BuildingDefectMetroDepartmentEntityCodeList = readAndParseCSVFile(EntityCodeDirectoryPaths.PATH_TO_F34BUILDING_DEFECTMETRO_DEPARTMENT_ENTITYCODE);
         List<String> f34BuildingPCDDepartmentEntityCodeList = readAndParseCSVFile(EntityCodeDirectoryPaths.PATH_TO_F34BUILDING_PCD_DEPARTMENT_ENTITYCODE);
 
-
-
         // F10 Building Lists
         List<String> f10BuildingAMHSDepartmentEntityCodeList = readAndParseCSVFile(EntityCodeDirectoryPaths.PATH_TO_F10BUILDING_AMHS_DEPARTMENT_ENTITYCODE);
         List<String> f10BuildingDireDepartmentEntityCodeList = readAndParseCSVFile(EntityCodeDirectoryPaths.PATH_TO_F10BUILDING_DIRE_DEPARTMENT_ENTITYCODE);
@@ -47,7 +44,6 @@ public class DirectoryCreator {
         List<String> f10BuildingDefectMetroDepartmentEntityCodeList = readAndParseCSVFile(EntityCodeDirectoryPaths.PATH_TO_F10BUILDING_DEFECTMETRO_DEPARTMENT_ENTITYCODE);
         List<String> f10BuildingPCDDepartmentEntityCodeList = readAndParseCSVFile(EntityCodeDirectoryPaths.PATH_TO_F10BUILDING_PCD_DEPARTMENT_ENTITYCODE);
 
-
         // F24 Building Lists
         List<String> f24BuildingAMHSDepartmentEntityCodeList = readAndParseCSVFile(EntityCodeDirectoryPaths.PATH_TO_F24BUILDING_AMHS_DEPARTMENT_ENTITYCODE);
         List<String> f24BuildingDireDepartmentEntityCodeList = readAndParseCSVFile(EntityCodeDirectoryPaths.PATH_TO_F24BUILDING_DIRE_DEPARTMENT_ENTITYCODE);
@@ -61,7 +57,6 @@ public class DirectoryCreator {
         List<String> f24BuildingC4DepartmentEntityCodeList = readAndParseCSVFile(EntityCodeDirectoryPaths.PATH_TO_F24BUILDING_C4_DEPARTMENT_ENTITYCODE);
         List<String> f24BuildingDefectMetroDepartmentEntityCodeList = readAndParseCSVFile(EntityCodeDirectoryPaths.PATH_TO_F24BUILDING_DEFECTMETRO_DEPARTMENT_ENTITYCODE);
         List<String> f24BuildingPCDDepartmentEntityCodeList = readAndParseCSVFile(EntityCodeDirectoryPaths.PATH_TO_F24BUILDING_PCD_DEPARTMENT_ENTITYCODE);
-
 
         // F14 Building Lists
         List<String> f14BuildingAMHSDepartmentEntityCodeList = readAndParseCSVFile(EntityCodeDirectoryPaths.PATH_TO_F14BUILDING_AMHS_DEPARTMENT_ENTITYCODE);
@@ -133,7 +128,6 @@ public class DirectoryCreator {
         List<String> sortBuildingDefectMetroDepartmentEntityCodeList = readAndParseCSVFile(EntityCodeDirectoryPaths.PATH_TO_SORTBUILDING_DEFECTMETRO_DEPARTMENT_ENTITYCODE);
         List<String> sortBuildingPCDDepartmentEntityCodeList = readAndParseCSVFile(EntityCodeDirectoryPaths.PATH_TO_SORTBUILDING_PCD_DEPARTMENT_ENTITYCODE);
 
-
         /**
          * Example path is rootDir/level2Element/level3Element/departments/entityCode/level4Element
          */
@@ -143,7 +137,7 @@ public class DirectoryCreator {
         level2List.add("Sub Fab");
         level2List.add("Utility");
 
-        // These 2 dirs have exactly the same content. Possible can just copy and paste here instead of looping
+        // These 2 dirs have exactly the same content. Possibly can just copy and paste here instead of looping
         List<String> level3List = new ArrayList<>();
         level3List.add("Demo - move Out");
         level3List.add("Install - Move In");
@@ -850,5 +844,4 @@ public class DirectoryCreator {
             }
         }
     }
-
 }
