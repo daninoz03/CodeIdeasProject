@@ -57,7 +57,7 @@ public class DirectoryCreatorTest {
     @Test
     public void shouldCreateEntityCodeDirectoriesOfF10BuildingWithWetEtchDepartment_WhenCreateDirectoriesIsCalled() {
         // given
-        String pathToEntityCodes = "/Users/danielobrien/Desktop/BowsyTest/F10-Tool Acceptance Sign Off/Fab/Demo - move Out/Wet Etch/f10WetEtchEntityCode1";
+        String pathToEntityCodes = "/Users/danielobrien/Desktop/BowsyTest/F10-Tool Acceptance Sign Off/Fab/Demo - move Out/Wet Etch/GST117-3";
         File file = new File(pathToEntityCodes);
 
         // when
