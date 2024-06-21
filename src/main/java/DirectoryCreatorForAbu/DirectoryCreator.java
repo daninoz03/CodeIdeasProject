@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 public class DirectoryCreator {
 
-    private static final String PATH_TO_BASE_DIR = "./src/main/resources/DirectoryCreatorForAbu/createdDirectories/";//"/Users/danielobrien/Desktop/BowsyTest/";
+    private static final String PATH_TO_BASE_DIR = "./src/main/resources/DirectoryCreatorForAbu/createdDirectories/";
     private static final String PATH_TO_ROOT_DIR_CSV = "../../resources/DirectoryCreatorForAbu/rootDirNames.csv";
     private static final String PATH_TO_DEPARTMENTS_CSV = "../../resources/DirectoryCreatorForAbu/departments.csv";
 

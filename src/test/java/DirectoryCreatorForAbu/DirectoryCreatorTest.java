@@ -12,7 +12,6 @@ import java.io.File;
 @RunWith(MockitoJUnitRunner.class)
 public class DirectoryCreatorTest {
 
-    //TODO: Need to change the paths of this whole test suite
     DirectoryCreator directoryCreator = new DirectoryCreator();
     private static final String PATH_TO_F34_BUILDING_DIRECTORY = "./src/main/resources/DirectoryCreatorForAbu/createdDirectories/F34-Tool Acceptance Sign Off";
     private static final String PATH_TO_F24_BUILDING_DIRECTORY = "./src/main/resources/DirectoryCreatorForAbu/createdDirectories/F24-Tool Acceptance Sign Off";
