@@ -2,15 +2,17 @@ package DirectoryCreatorForAbu;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 public class DirectoryCreator {
 
-    private static final String PATH_TO_BASE_DIR = "/Users/danielobrien/Desktop/BowsyTest/";
-    private static final String PATH_TO_ROOT_DIR_CSV = "rootDirNames.csv";
-    private static final String PATH_TO_DEPARTMENTS_CSV = "departments.csv";
+    private static final String PATH_TO_BASE_DIR = "./src/main/resources/DirectoryCreatorForAbu/createdDirectories/";//"/Users/danielobrien/Desktop/BowsyTest/";
+    private static final String PATH_TO_ROOT_DIR_CSV = "../../resources/DirectoryCreatorForAbu/rootDirNames.csv";
+    private static final String PATH_TO_DEPARTMENTS_CSV = "../../resources/DirectoryCreatorForAbu/departments.csv";
 
     public void createDirectories() {
         List<String> rootDirsList = readAndParseCSVFile(PATH_TO_ROOT_DIR_CSV);
@@ -255,11 +257,15 @@ public class DirectoryCreator {
     }
 
     public static void main(String[] args) {
+
+        Path currentRelativePath = Paths.get("");
+        String s = currentRelativePath.toAbsolutePath().toString();
+        System.out.println("Current absolute path is: " + s);
         long startTime = System.currentTimeMillis();
         DirectoryCreator directoryCreator = new DirectoryCreator();
         directoryCreator.createDirectories();
         long endTime = System.currentTimeMillis();
-        long timeTaken = startTime - endTime;
+        long timeTaken = endTime - startTime;
         System.out.println("Time taken was " + timeTaken);
     }
 
