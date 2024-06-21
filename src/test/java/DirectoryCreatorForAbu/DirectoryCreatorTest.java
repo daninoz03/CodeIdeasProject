@@ -71,7 +71,7 @@ public class DirectoryCreatorTest {
         File file = new File(pathToEntityCodes);
 
         // when
-        //directoryCreator.createDirectories();
+        // Method called in the BeforeClass method
 
         // then
         Assert.assertTrue(file.exists());
@@ -85,7 +85,7 @@ public class DirectoryCreatorTest {
         File file = new File(pathToEntityCodes);
 
         // when
-        //directoryCreator.createDirectories();
+        // Method called in the BeforeClass method
 
         // then
         Assert.assertTrue(file.exists());
@@ -99,7 +99,7 @@ public class DirectoryCreatorTest {
         File file = new File(pathToNonExistentEntityCodes);
 
         // when
-        //directoryCreator.createDirectories();
+        // Method called in the BeforeClass method
 
         // then
         Assert.assertFalse(file.exists());
@@ -112,7 +112,7 @@ public class DirectoryCreatorTest {
         File file = new File(pathToEntityCodes);
 
         // when
-        //directoryCreator.createDirectories();
+        // Method called in the BeforeClass method
 
         // then
         Assert.assertTrue(file.exists());
@@ -126,7 +126,7 @@ public class DirectoryCreatorTest {
         File file = new File(pathToNonExistentEntityCodes);
 
         // when
-        //directoryCreator.createDirectories();
+        // Method called in the BeforeClass method
 
         // then
         Assert.assertFalse(file.exists());
@@ -139,7 +139,7 @@ public class DirectoryCreatorTest {
         File file = new File(pathToEntityCodes);
 
         // when
-        //directoryCreator.createDirectories();
+        // Method called in the BeforeClass method
 
         // then
         Assert.assertTrue(file.exists());
@@ -153,7 +153,7 @@ public class DirectoryCreatorTest {
         File file = new File(pathToNonExistentEntityCodes);
 
         // when
-        //directoryCreator.createDirectories();
+        // Method called in the BeforeClass method
 
         // then
         Assert.assertFalse(file.exists());
@@ -166,7 +166,7 @@ public class DirectoryCreatorTest {
         File file = new File(pathToEntityCodes);
 
         // when
-        //directoryCreator.createDirectories();
+        // Method called in the BeforeClass method
 
         // then
         Assert.assertTrue(file.exists());
@@ -180,7 +180,7 @@ public class DirectoryCreatorTest {
         File file = new File(pathToNonExistentEntityCodes);
 
         // when
-        //directoryCreator.createDirectories();
+        // Method called in the BeforeClass method
 
         // then
         Assert.assertFalse(file.exists());
