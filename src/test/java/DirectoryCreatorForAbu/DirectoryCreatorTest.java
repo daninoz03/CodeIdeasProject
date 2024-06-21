@@ -1,9 +1,6 @@
 package DirectoryCreatorForAbu;
 
-import org.junit.AfterClass;
-import org.junit.Assert;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.*;
 import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
 
@@ -12,7 +9,7 @@ import java.io.File;
 @RunWith(MockitoJUnitRunner.class)
 public class DirectoryCreatorTest {
 
-    DirectoryCreator directoryCreator = new DirectoryCreator();
+    static DirectoryCreator directoryCreator = new DirectoryCreator();
     private static final String PATH_TO_F34_BUILDING_DIRECTORY = "./src/main/resources/DirectoryCreatorForAbu/createdDirectories/F34-Tool Acceptance Sign Off";
     private static final String PATH_TO_F24_BUILDING_DIRECTORY = "./src/main/resources/DirectoryCreatorForAbu/createdDirectories/F24-Tool Acceptance Sign Off";
     private static final String PATH_TO_F14_BUILDING_DIRECTORY = "./src/main/resources/DirectoryCreatorForAbu/createdDirectories/F14-Tool Acceptance Sign Off";
@@ -31,12 +28,15 @@ public class DirectoryCreatorTest {
     static File file7 = new File(PATH_TO_IR5_BUILDING_DIRECTORY);
     static File file8 = new File(PATH_TO_SORT_BUILDING_DIRECTORY);
 
+    static long startTime;
+    static long endtime;
 
 
     private static final String GLOBAL_PATH = "./src/main/resources/DirectoryCreatorForAbu/createdDirectories/";
 
     @BeforeClass
     public static void removeAnyDirectoriesCurrentlyPresent() {
+        startTime = System.currentTimeMillis();
         deleteDirectory(file1);
         deleteDirectory(file2);
         deleteDirectory(file3);
@@ -45,6 +45,8 @@ public class DirectoryCreatorTest {
         deleteDirectory(file6);
         deleteDirectory(file7);
         deleteDirectory(file8);
+
+        directoryCreator.createDirectories();
     }
 
     @AfterClass
@@ -57,6 +59,9 @@ public class DirectoryCreatorTest {
         deleteDirectory(file6);
         deleteDirectory(file7);
         deleteDirectory(file8);
+        endtime = System.currentTimeMillis();
+        long totalTime = endtime - startTime;
+        System.out.println("Total test time is " + totalTime);
     }
 
     @Test
@@ -66,7 +71,7 @@ public class DirectoryCreatorTest {
         File file = new File(pathToEntityCodes);
 
         // when
-        directoryCreator.createDirectories();
+        //directoryCreator.createDirectories();
 
         // then
         Assert.assertTrue(file.exists());
@@ -80,7 +85,7 @@ public class DirectoryCreatorTest {
         File file = new File(pathToEntityCodes);
 
         // when
-        directoryCreator.createDirectories();
+        //directoryCreator.createDirectories();
 
         // then
         Assert.assertTrue(file.exists());
@@ -94,7 +99,7 @@ public class DirectoryCreatorTest {
         File file = new File(pathToNonExistentEntityCodes);
 
         // when
-        directoryCreator.createDirectories();
+        //directoryCreator.createDirectories();
 
         // then
         Assert.assertFalse(file.exists());
@@ -107,7 +112,7 @@ public class DirectoryCreatorTest {
         File file = new File(pathToEntityCodes);
 
         // when
-        directoryCreator.createDirectories();
+        //directoryCreator.createDirectories();
 
         // then
         Assert.assertTrue(file.exists());
@@ -121,7 +126,7 @@ public class DirectoryCreatorTest {
         File file = new File(pathToNonExistentEntityCodes);
 
         // when
-        directoryCreator.createDirectories();
+        //directoryCreator.createDirectories();
 
         // then
         Assert.assertFalse(file.exists());
@@ -134,7 +139,7 @@ public class DirectoryCreatorTest {
         File file = new File(pathToEntityCodes);
 
         // when
-        directoryCreator.createDirectories();
+        //directoryCreator.createDirectories();
 
         // then
         Assert.assertTrue(file.exists());
@@ -148,7 +153,7 @@ public class DirectoryCreatorTest {
         File file = new File(pathToNonExistentEntityCodes);
 
         // when
-        directoryCreator.createDirectories();
+        //directoryCreator.createDirectories();
 
         // then
         Assert.assertFalse(file.exists());
@@ -161,7 +166,7 @@ public class DirectoryCreatorTest {
         File file = new File(pathToEntityCodes);
 
         // when
-        directoryCreator.createDirectories();
+        //directoryCreator.createDirectories();
 
         // then
         Assert.assertTrue(file.exists());
@@ -175,7 +180,7 @@ public class DirectoryCreatorTest {
         File file = new File(pathToNonExistentEntityCodes);
 
         // when
-        directoryCreator.createDirectories();
+        //directoryCreator.createDirectories();
 
         // then
         Assert.assertFalse(file.exists());
